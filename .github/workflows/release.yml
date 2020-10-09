@@ -48,7 +48,7 @@ jobs:
       - name: Generate Changelog using github-changelog-generator
         uses: faberNovel/github-changelog-generator-action@v1.0.0-alpha02
         with:
-          options: --token ${{ secrets.GITHUB_TOKEN }} --add-sections '{"documentation":{"prefix":"**Documentation updates:**","labels":["documentation"]}, "removal":{"prefix":"**Removal**","labels":["removal"]}}'
+          options: --token ${{ secrets.GITHUB_TOKEN }} --add-sections {"documentation":{"prefix":"**Documentation updates:**","labels":["documentation"]}, "removal":{"prefix":"**Removal**","labels":["removal"]}}
 
       - name: Get Changelog Entry
         id: changelog_reader
