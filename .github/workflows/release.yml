@@ -45,7 +45,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           output: CHANGELOG.md
           addSections: |
-            '{"documentation":{"prefix":"**Documentation updates:**","labels":["documentation"]}, "removal":{"prefix":"**Removal**","labels":["removal"]}}'
+            '{"documentation":{"prefix":"**Documentation updates:\*\*","labels":["documentation"]},"removal":{"prefix":"**Removal**","labels":["removal"]}}'
 
       - name: Get Changelog Entry
         id: changelog_reader
