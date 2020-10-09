@@ -44,7 +44,8 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           output: CHANGELOG.md
-
+          addSections: |
+            {"documentation":{"prefix":"**Documentation updates:**","labels":["documentation"]}, "removal":{"prefix":"**Removal**","labels":["removal"]}}
 
       - name: Get Changelog Entry
         id: changelog_reader
@@ -63,6 +64,16 @@ jobs:
           body: ${{ steps.changelog_reader.outputs.changes }}
           prerelease: true
           release_name: Release ${{ needs.tag.outputs.tag }}
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v5
+        with:
+          author_name: CI
+          author_email: ci@ci.com
+          message: "Update CHANGELOG"
+          add: "CHANGELOG.md"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       #in case of failure
       - name: Rollback on failure
