@@ -43,7 +43,7 @@ jobs:
         uses: heinrichreimer/github-changelog-generator-action@v2.1.1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          addSections: "{"documentation":{"prefix":"**Documentation updates:**","labels":["documentation"]}, "removal":{"prefix":"**Removal**","labels":["removal"]}}"
+          addSections: '{"documentation":{"prefix":"**Documentation updates:**","labels":["documentation"]}, "removal":{"prefix":"**Removal**","labels":["removal"]}}'
 
 
       - name: Get Changelog Entry
