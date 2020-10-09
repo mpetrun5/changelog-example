@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.1.4](https://github.com/mpetrun5/release-pipeline-example/tree/v0.1.4) (2020-10-09)
+
+**Implemented enhancements:**
+
+- Add sections to changelog [\#8](https://github.com/mpetrun5/release-pipeline-example/issues/8)
+
 ## [v0.1.3](https://github.com/mpetrun5/release-pipeline-example/tree/v0.1.3) (2020-10-09)
 
 **Implemented enhancements:**
@@ -10,7 +16,7 @@
 
 - Bugfix [\#5](https://github.com/mpetrun5/release-pipeline-example/issues/5)
 
-**Closed issues:**
+**Removal**
 
 - Removal [\#7](https://github.com/mpetrun5/release-pipeline-example/issues/7)
 
@@ -26,9 +32,12 @@
 
 - Fix release pipeline [\#4](https://github.com/mpetrun5/release-pipeline-example/issues/4)
 
-**Closed issues:**
+**Removal**
 
 - Remove extra code [\#3](https://github.com/mpetrun5/release-pipeline-example/issues/3)
+
+**Closed issues:**
+
 - Add documentation [\#1](https://github.com/mpetrun5/release-pipeline-example/issues/1)
 
 ## [v0.1.0](https://github.com/mpetrun5/release-pipeline-example/tree/v0.1.0) (2020-10-09)
