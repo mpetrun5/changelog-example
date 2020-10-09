@@ -44,10 +44,10 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           addSections:
-            documentation:
+            - documentation:
               prefix: "**Documentation updates:**"
               labels: ["documentation"]
-            removal:
+            - removal:
               prefix: "**Removal**"
               labels: ["removal"]
 
