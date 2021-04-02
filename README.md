@@ -1,4 +1,4 @@
 # changelog-example
 
-Test change
+Test change 2
 
