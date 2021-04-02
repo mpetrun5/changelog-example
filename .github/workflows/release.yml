@@ -45,6 +45,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           output: CHANGELOG.md
           issues: false
+          futureRelease: ${{ needs.tag.outputs.tag }}
 
       - name: Get Changelog Entry
         id: changelog_reader
