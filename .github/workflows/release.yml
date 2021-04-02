@@ -46,6 +46,8 @@ jobs:
           output: CHANGELOG.md
           issues: false
           pullRequests: true
+          prWoLabels: true
+          author: true
 
       - name: Get Changelog Entry
         id: changelog_reader
